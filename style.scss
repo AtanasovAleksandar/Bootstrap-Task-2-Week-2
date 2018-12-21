@@ -349,4 +349,17 @@ footer {
             }
         }
     }
+    .portfolio-section {
+        .portfolio-title {
+            width: 100%;
+        }
+        .portfolio-container {
+            .card {
+                left: 57px;
+                .card-img-top {
+                    height: 170px;
+                }
+            }
+        }
+    }
 }

@@ -267,6 +267,13 @@ footer {
     width: 100%;
     height: 174px; }
     .service-section .service-desc .card .card-img-top {
-      width: 166px; } }
+      width: 166px; }
+
+  .portfolio-section .portfolio-title {
+    width: 100%; }
+  .portfolio-section .portfolio-container .card {
+    left: 57px; }
+    .portfolio-section .portfolio-container .card .card-img-top {
+      height: 170px; } }
 
 /*# sourceMappingURL=style.css.map */
