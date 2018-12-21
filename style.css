@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box; }
+
+html body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black; }
+
+.col-md-12 {
+  padding: 0px !important;
+  margin: 0px !important; }
+
+.header-section {
+  display: block;
+  position: relative;
+  width: 99% !important; }
+
+#background-video {
+  margin: 0px !important;
+  padding: 0px !important;
+  background: black !important;
+  object-fit: fill;
+  z-index: -1; }
+
+.nav-menu {
+  background-color: transparent;
+  height: 65px;
+  position: absolute !important;
+  left: 15px; }
+  .nav-menu .nav-logo {
+    margin-right: 50px;
+    margin-top: 12px; }
+    .nav-menu .nav-logo h2 {
+      color: #286fff;
+      margin-right: 20px; }
+      .nav-menu .nav-logo h2 span {
+        color: #f8f9fa; }
+  .nav-menu ul li a {
+    color: white; }
+  .nav-menu ul li a:hover {
+    background-color: #286fff; }
+
+.nav {
+  margin-top: 12px; }
+
+.nav-search {
+  position: absolute;
+  top: 11px;
+  right: 10px; }
+
+.jumbotron {
+  position: absolute;
+  left: 130px;
+  top: 145px;
+  color: white;
+  font-size: 50px;
+  background-color: transparent !important;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 1.5; }
+  .jumbotron .header-img img {
+    width: 40%;
+    position: absolute;
+    right: -85px;
+    top: 30px; }
+  .jumbotron p {
+    width: 70%; }
+
+section {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  background-color: #247BA0; }
+  section .curve-box {
+    height: 800px;
+    width: 50%;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-color: black; }
+  section .about-content {
+    height: 800px; }
+  section img {
+    position: absolute;
+    width: 70%;
+    z-index: 5;
+    left: 19px;
+    top: 145px; }
+  section .about-description {
+    position: absolute;
+    right: 22px;
+    top: 75px;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    left: 57%;
+    top: 120px;
+    width: 35%;
+    text-align: center;
+    box-shadow: 2px -6px 24px 3px black; }
+    section .about-description h2 {
+      font-size: 40px;
+      font-weight: bold;
+      color: white;
+      margin-top: 15px; }
+
+.service-section {
+  height: 800px;
+  background-color: #247BA0;
+  position: relative; }
+  .service-section .service-desc {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 45%; }
+    .service-section .service-desc .service-title {
+      width: 79%;
+      text-align: center;
+      font-size: 40px;
+      color: white; }
+    .service-section .service-desc .card {
+      width: 79%;
+      height: 185px;
+      margin-top: 20px;
+      background-color: transparent;
+      border: 1px solid black;
+      box-shadow: 2px -6px 24px 3px black; }
+      .service-section .service-desc .card .card:hover {
+        background-color: #f8f9fa;
+        opacity: 0.4; }
+      .service-section .service-desc .card .card-img-top {
+        width: 35%;
+        left: 7%;
+        top: 0px; }
+      .service-section .service-desc .card .card-body {
+        width: 50%;
+        position: absolute;
+        right: 0; }
+        .service-section .service-desc .card .card-body .card-title {
+          color: white;
+          text-align: center; }
+  .service-section .fas {
+    position: absolute;
+    right: 15px;
+    font-size: 41px;
+    bottom: 10px;
+    color: white; }
+  .service-section .fas:hover {
+    color: black;
+    opacity: 0.5;
+    cursor: pointer; }
+  .service-section .img-section {
+    clip-path: polygon(57% 0, 100% 1%, 100% 100%, 0 100%, 0 80%);
+    background-color: black;
+    height: 800px; }
+    .service-section .img-section .rocket-img {
+      position: absolute;
+      width: 70%;
+      top: 36%;
+      left: 24%; }
+
+.portfolio-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .portfolio-section .portfolio-title {
+    width: 77%;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-top: 35px;
+    text-align: center; }
+  .portfolio-section .card {
+    width: 30%;
+    margin-left: 75px;
+    margin-top: 20px;
+    margin-left: 75px;
+    margin-top: 20px;
+    height: 200px;
+    background-color: transparent;
+    box-shadow: 4px 4px 0px 2px black;
+    border: 2px solid black; }
+    .portfolio-section .card .card-img-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 90%;
+      z-index: 1; }
+  .portfolio-section .card:hover {
+    background-color: rgba(55, 0, 255, 0.103);
+    cursor: pointer; }
+
+.container {
+  max-width: 1270px !important; }
+
+.about-container h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin-top: 45px; }
+.about-container form {
+  margin-left: 35px;
+  margin-top: 36px;
+  height: 400px;
+  color: white; }
+.about-container .map {
+  position: relative;
+  height: 400px;
+  position: relative;
+  height: 400px;
+  margin-right: 35px;
+  margin-top: 20px; }
+  .about-container .map iframe {
+    height: 100%;
+    width: 100%; }
+
+#emailHelp {
+  color: white !important; }
+
+footer {
+  color: white;
+  margin-left: 5px;
+  text-align: center; }
+
+.overlay {
+  visibility: hidden;
+  color: white; }
+  .overlay a {
+    color: white; }
+  .overlay a:hover {
+    color: white; }
+
+.portfolio-container .card:hover .overlay {
+  visibility: visible;
+  transition: 1s ease;
+  z-index: 5; }
+.portfolio-container .card:hover .card-img-top {
+  opacity: 0.5; }
+
+/*# sourceMappingURL=style.css.map */
