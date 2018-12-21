@@ -34,32 +34,33 @@ html {
     z-index: -1;
 }
 
-.nav-menu {
+.navbar {
+    width: 100%;
+    background-color: transparent !important;
+    margin-left: 20px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-brand {
+    .color-text {
+        color: $secondary;
+        font-size: 20px;
+    }
+}
+
+.navbar-brand:hover {
     background-color: transparent;
-    height: 65px;
-    position: absolute !important;
-    left: 15px;
-    .nav-logo {
-        margin-right: 50px;
-        margin-top: 12px;
-        h2 {
-            color: $secondary;
-            margin-right: 20px;
-            span {
-                color: $primary;
-            }
-        }
-    }
-    ul {
-        li {
-            a {
-                color: white;
-            }
-            a:hover {
-                background-color: $secondary;
-            }
-        }
-    }
+}
+
+a {
+    color: white !important;
+}
+
+a:hover {
+    background-color: $secondary;
 }
 
 .nav {
@@ -133,7 +134,7 @@ section {
         h2 {
             font-size: 40px;
             font-weight: bold;
-            color: white; // box-shadow: 2px -6px 24px 3px black;
+            color: white;
             margin-top: 15px;
         }
     }
@@ -149,11 +150,10 @@ section {
         left: 5%;
         width: 45%;
         .service-title {
-            // box-shadow: 2px -6px 24px 3px black;
             width: 79%;
             text-align: center;
             font-size: 40px;
-            color: white; // border: 1px solid black;
+            color: white;
         }
         .card {
             width: 79%;
@@ -167,16 +167,15 @@ section {
                 opacity: 0.4;
             }
             .card-img-top {
-                width: 35%;
+                top: -13px;
+                width: 45%;
                 left: 7%;
-                top: 0px;
             }
             .card-body {
                 width: 50%;
                 position: absolute;
                 right: 0;
                 .card-title {
-                    // box-shadow: 2px -6px 24px 3px black;
                     color: white;
                     text-align: center;
                 }
@@ -218,7 +217,7 @@ section {
         font-size: 40px;
         color: white;
         margin-top: 35px;
-        text-align: center; // box-shadow: 4px 4px 11px 2px black
+        text-align: center;
     }
     .card {
         width: 30%;
@@ -300,7 +299,6 @@ footer {
 
 .portfolio-container {
     .card:hover .overlay {
-        // position: absolute;
         visibility: visible;
         transition: 1s ease;
         z-index: 5
@@ -310,3 +308,45 @@ footer {
     }
 }
 
+@media only screen and (max-width: 999px) and (min-width: 740px) {
+    .jumbotron {
+        p {
+            font-size: 20px;
+        }
+        .header-img img {
+            width: 45%;
+            position: absolute;
+            right: 0px;
+            top: 217px;
+        }
+    }
+    section img {
+        position: absolute;
+        width: 70%;
+        z-index: 5;
+        left: 35px;
+        top: 235px;
+    }
+    .about-description {
+        p {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+    }
+    .service-section {
+        .img-section {
+            .rocket-img {
+                top: 47%;
+            }
+        }
+        .service-desc {
+            .card {
+                width: 100%;
+                height: 174px;
+                .card-img-top {
+                    width: 166px;
+                }
+            }
+        }
+    }
+}

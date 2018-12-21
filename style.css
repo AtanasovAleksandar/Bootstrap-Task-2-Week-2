@@ -22,23 +22,26 @@ html body {
   object-fit: fill;
   z-index: -1; }
 
-.nav-menu {
-  background-color: transparent;
-  height: 65px;
-  position: absolute !important;
-  left: 15px; }
-  .nav-menu .nav-logo {
-    margin-right: 50px;
-    margin-top: 12px; }
-    .nav-menu .nav-logo h2 {
-      color: #286fff;
-      margin-right: 20px; }
-      .nav-menu .nav-logo h2 span {
-        color: #f8f9fa; }
-  .nav-menu ul li a {
-    color: white; }
-  .nav-menu ul li a:hover {
-    background-color: #286fff; }
+.navbar {
+  width: 100%;
+  background-color: transparent !important;
+  margin-left: 20px; }
+
+.navbar-light .navbar-toggler-icon {
+  background-color: white; }
+
+.navbar-brand .color-text {
+  color: #286fff;
+  font-size: 20px; }
+
+.navbar-brand:hover {
+  background-color: transparent; }
+
+a {
+  color: white !important; }
+
+a:hover {
+  background-color: #286fff; }
 
 .nav {
   margin-top: 12px; }
@@ -129,9 +132,9 @@ section {
         background-color: #f8f9fa;
         opacity: 0.4; }
       .service-section .service-desc .card .card-img-top {
-        width: 35%;
-        left: 7%;
-        top: 0px; }
+        top: -13px;
+        width: 45%;
+        left: 7%; }
       .service-section .service-desc .card .card-body {
         width: 50%;
         position: absolute;
@@ -237,5 +240,33 @@ footer {
   z-index: 5; }
 .portfolio-container .card:hover .card-img-top {
   opacity: 0.5; }
+
+@media only screen and (max-width: 999px) and (min-width: 740px) {
+  .jumbotron p {
+    font-size: 20px; }
+  .jumbotron .header-img img {
+    width: 45%;
+    position: absolute;
+    right: 0px;
+    top: 217px; }
+
+  section img {
+    position: absolute;
+    width: 70%;
+    z-index: 5;
+    left: 35px;
+    top: 235px; }
+
+  .about-description p {
+    font-size: 15px;
+    line-height: 1.5; }
+
+  .service-section .img-section .rocket-img {
+    top: 47%; }
+  .service-section .service-desc .card {
+    width: 100%;
+    height: 174px; }
+    .service-section .service-desc .card .card-img-top {
+      width: 166px; } }
 
 /*# sourceMappingURL=style.css.map */
