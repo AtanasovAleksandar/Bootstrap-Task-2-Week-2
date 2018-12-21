@@ -51,6 +51,9 @@ a:hover {
   top: 11px;
   right: 10px; }
 
+.form-inline .form-control {
+  margin-right: 20px; }
+
 .jumbotron {
   position: absolute;
   left: 130px;
@@ -133,7 +136,7 @@ section {
         opacity: 0.4; }
       .service-section .service-desc .card .card-img-top {
         top: -13px;
-        width: 45%;
+        width: 40% !important;
         left: 7%; }
       .service-section .service-desc .card .card-body {
         width: 50%;
@@ -241,14 +244,22 @@ footer {
 .portfolio-container .card:hover .card-img-top {
   opacity: 0.5; }
 
+.form-inline .form-control {
+  width: 85%; }
+
 @media only screen and (max-width: 999px) and (min-width: 740px) {
+  .navbar-nav .nav-item a {
+    text-align: center; }
+
   .jumbotron p {
-    font-size: 20px; }
+    font-size: 20px;
+    margin-top: 150px;
+    width: 100%; }
   .jumbotron .header-img img {
-    width: 45%;
-    position: absolute;
-    right: 0px;
-    top: 217px; }
+    display: none; }
+
+  .lead {
+    margin-top: 0px !important; }
 
   section img {
     position: absolute;
@@ -261,19 +272,259 @@ footer {
     font-size: 15px;
     line-height: 1.5; }
 
-  .service-section .img-section .rocket-img {
-    top: 47%; }
-  .service-section .service-desc .card {
-    width: 100%;
-    height: 174px; }
-    .service-section .service-desc .card .card-img-top {
-      width: 166px; }
+  .service-section .img-section {
+    width: 45%; }
+    .service-section .img-section .rocket-img {
+      top: 47%; }
+  .service-section .service-desc {
+    position: absolute !important;
+    width: 100% !important;
+    bottom: 135px !important;
+    top: auto !important;
+    margin-left: -10px !important; }
+    .service-section .service-desc .card {
+      width: 50% !important;
+      height: 174px; }
+      .service-section .service-desc .card .card-img-top {
+        width: 166px; }
 
   .portfolio-section .portfolio-title {
     width: 100%; }
   .portfolio-section .portfolio-container .card {
-    left: 57px; }
+    max-width: 80%;
+    position: relative;
+    width: 100%;
+    left: 57px;
+    margin-left: 30px; }
     .portfolio-section .portfolio-container .card .card-img-top {
-      height: 170px; } }
+      height: 170px; }
+
+  .card .card-body span .fas {
+    bottom: -25px !important; }
+
+  .form-inline .form-control {
+    width: 85%; } }
+@media only screen and (max-width: 739px) and (min-width: 400px) {
+  video {
+    height: 250px; }
+
+  .navbar-nav .nav-item a {
+    text-align: center; }
+
+  .jumbotron {
+    display: none; }
+
+  .about-section {
+    height: 956px; }
+    .about-section .curve-box {
+      clip-path: polygon(0 0, 100% 0, 100% 35%, 50% 41%, 0% 35%);
+      width: 100%; }
+      .about-section .curve-box .img-fluid {
+        width: 50% !important;
+        height: auto;
+        top: -8px !important;
+        left: 26% !important; }
+    .about-section .about-description {
+      max-width: 100%;
+      position: absolute !important;
+      left: 0px !important;
+      width: 100% !important;
+      top: 351px !important; }
+      .about-section .about-description p {
+        padding: 15px;
+        width: 94%;
+        bottom: 10px; }
+      .about-section .about-description h2 {
+        top: 0px !important;
+        position: relative;
+        bottom: 1px;
+        margin-top: 40px; }
+    .about-section .about-description {
+      max-width: 100%; }
+      .about-section .about-description h2 {
+        top: 230px;
+        position: relative;
+        bottom: 1px;
+        margin-top: 40px; }
+      .about-section .about-description p {
+        padding: 15px;
+        width: 94%;
+        bottom: 60px; }
+
+  .service-section .img-section {
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 50% 46%, 0% 35%);
+    max-width: 100%; }
+
+  .service-section {
+    height: 1200px; }
+    .service-section .service-desc {
+      position: absolute;
+      width: 100%;
+      bottom: 125px;
+      top: auto; }
+      .service-section .service-desc .card {
+        width: 85%;
+        margin-left: 25px !important; }
+        .service-section .service-desc .card .card-img-top {
+          top: -2px;
+          width: 45%;
+          left: 7%; }
+      .service-section .service-desc .service-title {
+        margin-left: 30px; }
+    .service-section .img-section .rocket-img {
+      position: absolute;
+      width: 50%;
+      top: 10% !important;
+      left: 31%; }
+    .service-section .fas {
+      bottom: -20px !important; }
+
+  .portfolio-section .portfolio-title {
+    width: 100%;
+    margin-top: 0px; }
+  .portfolio-section .card {
+    width: 100%;
+    margin: 47px; }
+
+  .container {
+    padding-right: 0px !important;
+    padding-left: 0px !important; }
+
+  .portfolio-container .card .card-img-top {
+    width: 60%;
+    left: 84px;
+    top: 0;
+    margin: 0px; }
+
+  .about-container form {
+    width: 85% !important;
+    max-width: 100%;
+    margin-left: 31px;
+    padding: 0px; }
+    .about-container form button {
+      width: 100%; }
+  .about-container .map {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 10px; } }
+@media only screen and (max-width: 1000px) and (min-width: 765px) {
+  .service-section .service-desc .card {
+    width: 95% !important; }
+
+  .about-container form {
+    margin-left: 31px !important; } }
+@media only screen and (max-width: 399px) {
+  video {
+    height: 250px; }
+
+  .navbar-nav .nav-item a {
+    text-align: center; }
+
+  .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    position: absolute;
+    bottom: 7px;
+    right: 20px !important; }
+
+  .form-inline .form-control {
+    width: 70% !important; }
+
+  .jumbotron {
+    display: none; }
+
+  .about-section {
+    height: 956px; }
+    .about-section .curve-box {
+      clip-path: polygon(0 0, 100% 0, 100% 35%, 50% 42%, 0% 35%);
+      width: 100%; }
+      .about-section .curve-box .img-fluid {
+        width: 55%;
+        height: auto;
+        top: 77px;
+        left: 23%; }
+    .about-section .about-description {
+      max-width: 100%;
+      position: absolute !important;
+      left: 0px !important;
+      width: 100% !important;
+      top: 351px !important; }
+      .about-section .about-description p {
+        padding: 15px;
+        width: 94%;
+        bottom: 10px; }
+      .about-section .about-description h2 {
+        top: 0px !important;
+        position: relative;
+        bottom: 1px;
+        margin-top: 40px; }
+    .about-section .about-description {
+      max-width: 100%; }
+      .about-section .about-description h2 {
+        top: 230px;
+        position: relative;
+        bottom: 1px;
+        margin-top: 40px; }
+      .about-section .about-description p {
+        padding: 8px;
+        width: 94%;
+        bottom: 60px; }
+
+  .service-section .img-section {
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 50% 46%, 0% 35%);
+    max-width: 100%; }
+
+  .service-section {
+    height: 1200px; }
+    .service-section .service-desc {
+      position: absolute;
+      width: 100%;
+      bottom: 125px;
+      top: auto; }
+      .service-section .service-desc .card {
+        width: 85%;
+        margin-left: 25px !important;
+        left: -18px; }
+        .service-section .service-desc .card .card-img-top {
+          top: 32px !important;
+          width: 45%;
+          left: 7%; }
+      .service-section .service-desc .service-title {
+        margin-left: 30px; }
+    .service-section .img-section .rocket-img {
+      position: absolute;
+      width: 69%;
+      top: 10% !important;
+      left: 21%; }
+    .service-section .fas {
+      bottom: -20px !important; }
+
+  .portfolio-section .portfolio-title {
+    width: 100%;
+    margin-top: 0px; }
+  .portfolio-section .card {
+    width: 100%;
+    margin: 47px; }
+
+  .container {
+    padding-right: 0px !important;
+    padding-left: 0px !important; }
+
+  .portfolio-container .card .card-img-top {
+    width: 60%;
+    left: 49px;
+    top: 42px;
+    margin: 0px; }
+
+  .about-container form {
+    width: 85% !important;
+    max-width: 100%;
+    margin-left: 31px;
+    padding: 0px; }
+    .about-container form button {
+      width: 100%; }
+  .about-container .map {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
